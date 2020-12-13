@@ -572,7 +572,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -Remember to blink
+  m_text: Remember to blink
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -641,7 +641,7 @@ MonoBehaviour:
   m_margin: {x: -0.000104133156, y: 0, z: 1.9489585, w: 0}
   m_textInfo:
     textComponent: {fileID: 524782683}
-    characterCount: 18
+    characterCount: 17
     spriteCount: 0
     spaceCount: 2
     wordCount: 3
@@ -1080,7 +1080,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -Don't touch the shapes
+  m_text: Don't touch the shapes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1149,7 +1149,7 @@ MonoBehaviour:
   m_margin: {x: -0.14295359, y: 0, z: 1.9489585, w: 0}
   m_textInfo:
     textComponent: {fileID: 1017728086}
-    characterCount: 23
+    characterCount: 22
     spriteCount: 0
     spaceCount: 3
     wordCount: 4
@@ -1622,7 +1622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Esc to pause game
+  m_text: 'esc: pause game'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1691,10 +1691,10 @@ MonoBehaviour:
   m_margin: {x: -0.000104133156, y: 0, z: 1.9489585, w: 0}
   m_textInfo:
     textComponent: {fileID: 1270881144}
-    characterCount: 17
+    characterCount: 15
     spriteCount: 0
-    spaceCount: 3
-    wordCount: 4
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
     lineCount: 1
     pageCount: 1
