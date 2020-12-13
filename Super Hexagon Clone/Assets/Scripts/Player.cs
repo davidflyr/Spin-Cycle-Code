@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] PauseMenu _menu;
+
     public float _moveSpeed = 600f;
 
     float _movement = 0f;
@@ -13,6 +15,14 @@ public class Player : MonoBehaviour
     void Update()
     {
         _movement = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!_menu.isActiveAndEnabled)
+                _menu.Pause();
+            else
+                _menu.Resume();
+        }
     }
 
     void FixedUpdate()
