@@ -3,9 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI _bestCounter;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +18,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
+        _bestCounter.text = DataManager._best.ToString();
         gameObject.SetActive(true);
         Time.timeScale = 0f;
     }

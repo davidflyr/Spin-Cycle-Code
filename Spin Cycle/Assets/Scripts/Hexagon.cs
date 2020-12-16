@@ -30,4 +30,14 @@ public class Hexagon : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Center")
+        {
+            DataManager._current++;
+            if (DataManager._current > DataManager._best)
+                DataManager._best = DataManager._current;
+        }
+    }
 }
