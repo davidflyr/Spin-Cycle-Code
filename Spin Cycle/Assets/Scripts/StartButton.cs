@@ -15,6 +15,7 @@ public class StartButton : MonoBehaviour
 
     public void LoadNextLevel()
     {
+        DataManager.ResetColors();
         SceneManager.LoadScene(1);
     }
 }
