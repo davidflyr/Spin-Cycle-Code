@@ -5,12 +5,16 @@ using UnityEngine;
 public class Hexagon : MonoBehaviour
 {
     Rigidbody2D _rb;
+    Camera _cam;
+    Rotator _rotator;
 
     public float _shrinkSpeed = 3f;
 
     void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _cam = FindObjectOfType<Camera>();
+        _rotator = _cam.GetComponent<Rotator>();
     }
 
     // Start is called before the first frame update
@@ -38,6 +42,7 @@ public class Hexagon : MonoBehaviour
             DataManager._current++;
             if (DataManager._current > DataManager._best)
                 DataManager._best = DataManager._current;
+            _rotator.newDirection();
         }
     }
 }
